@@ -138,12 +138,12 @@ p{
 
 
 
-/*Image Skills slider*/
-.container{
+/*Image Skills slider*/ /*CORRECT*/
+/*.container{
     margin: 30px 0 0 10px;
-    width: 90%;
+    width: 80%;
     height: 350px;
-    display: flex;
+    display: flex ;
     justify-content: center;
     gap: 2px;
 }
@@ -154,7 +154,7 @@ p{
     object-fit: cover;
     border-radius: 20px;
     border: 2px solid white;
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.2s;
     background-color: black;
 }
 
@@ -162,7 +162,11 @@ p{
     width: 35%
 }
 
-/* Skills Slider */
+
+
+
+
+/* Skills Slider */ /*NO NO NO NO NO*/
 /*.slider {
     display: flex;
     overflow-x: auto;
