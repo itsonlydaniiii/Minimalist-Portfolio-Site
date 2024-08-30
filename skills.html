@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/Users/itsonlydaniii/Python.py/Portfolio/styles.css">
+        <title>Danielle Abel Portfolio</title>
+        <style>
+            /*My journey section styling*/
+            .about {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .box1 {
+                width: 100%;
+                text-align: center;
+            }
+
+            .box2-and-3 {
+                display: flex;
+                gap: 20px;
+            }
+
+            .box2 {
+                flex: 1 1 33.33%;
+            }
+
+            .box2 img {
+                width: 100%;
+                height: auto;
+                max-width: 400px; /* Ensure image size fits well */
+            }
+
+            .box3 {
+                flex: 2 1 66.66%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .box4 {
+                width: 100%;
+                text-align: center;
+            }
+
+            .box5 {
+                width: 100%;
+                text-align: center;
+            }
+
+            .resume-button {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: black;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+
+            .resume-button:hover {
+                background-color: grey;
+            }
+
+            /* Skills Section Styling */
+            .skills-section {
+                padding: 0px;
+                background-color: white;
+                color: black;
+            }
+    
+            .skills-section h1 {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+    
+            .skills-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+                justify-items: center;
+            }
+    
+            .skill {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+    
+            .circle {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: 6px solid white;
+                position: relative;
+                background-color: white;
+            }
+    
+            .circle::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                background-color: white;
+            }
+    
+            .circle[data-percentage] {
+                background-image: conic-gradient(
+                    purple calc(var(--percentage) * 1%),
+                    #ffffff calc(var(--percentage) * 1%)
+                );
+            }
+    
+            .skill span {
+                font-size: 18px;
+                font-weight: bold;
+                color: black;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--Navigation Bar-->
+        <nav>
+            <ul>
+                <!-- Left Items -->
+                <li><a href="/Users/itsonlydaniii/Desktop/Portfolio/skills.html">About</a></li>
+                <li><a href="/Users/itsonlydaniii/Desktop/Portfolio/projects.html">Projects</a></li>
+        
+                <!-- Centered Image Icon -->
+                <li class="nav-icon">
+                    <a href="/Users/itsonlydaniii/Desktop/Portfolio/index.html">
+                        <img src="/Users/itsonlydaniii/Desktop/Portfolio/Designer.png" alt="DA Icon">
+                    </a>
+                </li>
+        
+                <!-- Right Items -->
+                <li><a href="/Users/itsonlydaniii/Desktop/Portfolio/services.html">Services</a></li>
+                <li><a href="/Users/itsonlydaniii/Desktop/Portfolio/contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+
+<!-- About Section 1-->
+<!--<section class="about">
+    1. Image and Journey Paragraphs
+    <div class="about-content">
+        <h1 id="about-header">My Journey to Programming</h1>
+        <div class="journey-text">
+            <p>Hello! I&apos;m Dani, a passionate and dedicated frontend developer with a background in Tech Recruitment. My journey into coding began when I found myself fascinated by the work of developers I encountered in my previous role. The creativity and problem-solving involved in their work inspired me to dive into coding, initially as a hobby, but it quickly became a true passion.</p>
+            <p>I&apos;m well-versed in HTML, CSS, and JavaScript, with a growing proficiency in Python. Currently, I&apos;m expanding my skills in React and Angular, driven by a commitment to continuous learning and improvement. Although I&apos;m still at the entry level in my coding career, I bring a strong mindset of perseverance and a willingness to ask for help when needed. I believe that active listening and truly understanding the needs of a project are key to delivering effective and user-friendly web designs.</p>
+            <p>As I continue to develop my skills, I&apos;m excited about the opportunities ahead and look forward to contributing to projects that challenge me and help me grow as a developer. My goal is to create engaging, accessible, and visually appealing web experiences, and to keep evolving as a life-long learner in the ever-changing world of web development.</p>
+            <div class="button-container">
+                <a href="dummy-link-to-resume.pdf" class="resume-button">Resume</a>
+            </div>
+        </div>
+    </div>-->
+
+<!-- About Section 2-->
+    <section class="about">
+        <div class="box box1">
+            <h1>My Journey to Programming</h1>
+        </div>
+        <div class="box box2-and-3">
+            <div class="box box2">
+                <img src="/Users/itsonlydaniii/Desktop/Portfolio/WhatsApp Image 2024-01-02 at 10.21.34 copy.jpeg" alt="Portfolio Image">
+            </div>
+            <div class="box box3">
+                <p>Hello! I&apos;m Dani, a passionate and dedicated frontend developer with a background in Tech Recruitment. My journey into coding began when I found myself fascinated by the work of developers I encountered in my previous role. The creativity and problem-solving involved in their work inspired me to dive into coding, initially as a hobby, but it quickly became a true passion. 
+                    <br/> <br/>I&apos;m well-versed in HTML, CSS, and JavaScript, with a growing proficiency in Python. Currently, I&apos;m expanding my skills in React and Angular, driven by a commitment to continuous learning and improvement. Although I&apos;m still at the entry level in my coding career, I bring a strong mindset of perseverance and a willingness to ask for help when needed. I believe that active listening and truly understanding the needs of a project are key to delivering effective and user-friendly web designs.</p>
+            </div>
+        </div>
+        <div class="box box4">
+            <p>As I continue to develop my skills, I&apos;m excited about the opportunities ahead and look forward to contributing to projects that challenge me and help me grow as a developer. My goal is to create engaging, accessible, and visually appealing web experiences, and to keep evolving as a life-long learner in the ever-changing world of web development.</p>
+        </div>
+        <div class="box box5">
+            <a href="dummy-link-to-resume.pdf" class="resume-button">Resume</a>
+        </div>
+    </section>
+
+    <hr class="custom-hr">
+
+        <!-- 2. Skills Section CORRECT ONE!!! -->
+       <!--<div class="skills-content"></div>
+            <h1> Skills & Languages </h1>
+            <div class="container">
+                <img src="/Users/itsonlydaniii/Desktop/Portfolio/Design 1 copy.png" alt="HTML5">
+                <img src="/Users/itsonlydaniii/Desktop/Portfolio/Design 1 (3) copy.png" alt="Python">
+                <img src="/Users/itsonlydaniii/Desktop/Portfolio/Design 1 (4) copy.png" alt="CSS3">
+                <img src="/Users/itsonlydaniii/Desktop/Portfolio/Design 1 (7).png" alt="Ruby on Rails">
+                <img src="/Users/itsonlydaniii/Desktop/Portfolio/Design 1 (10).png" alt="JavaScript">
+                <img src="/Users/itsonlydaniii/Desktop/Portfolio/Design 1 (5).png" alt="Node.js">
+                <img src="/Users/itsonlydaniii/Desktop/Portfolio/Design 1 (6).png" alt="SQL">
+                <img src="/Users/itsonlydaniii/Desktop/Portfolio/Design 1 (2) copy.png" alt="React">
+        </div>-->
+
+        <!-- skills section with circle indicators-->
+<section class="skills-section">
+    <h1>Skills & Proficiency</h1>
+    <div class="skills-grid">
+        <div class="skill">
+            <div class="circle" data-percentage="85"></div>
+            <span>HTML</span>
+        </div>
+        <div class="skill">
+            <div class="circle" data-percentage="85"></div>
+            <span>CSS</span>
+        </div>
+        <div class="skill">
+            <div class="circle" data-percentage="70"></div>
+            <span>JavaScript</span>
+        </div>
+        <div class="skill">
+            <div class="circle" data-percentage="30"></div>
+            <span>Python I/P</span>
+        </div>
+        <div class="skill">
+            <div class="circle" data-percentage="10"></div>
+            <span>React.js I/P</span>
+        </div>
+        <div class="skill">
+            <div class="circle" data-percentage="45"></div>
+            <span>Node.js I/P</span>
+        </div>
+        <div class="skill">
+            <div class="circle" data-percentage="10"></div>
+            <span>C# I/P</span>
+        </div>
+        <div class="skill">
+            <div class="circle" data-percentage="10"></div>
+            <span>Ruby on Rails I/P</span>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript for Dynamic Circles -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const circles = document.querySelectorAll('.circle');
+
+            circles.forEach(circle => {
+                const percentage = circle.getAttribute('data-percentage');
+                circle.style.setProperty('--percentage', percentage);
+            });
+        });
+    </script>
+
+    <!-- 2. Skills Section NO NO NO NO NO!!!!!!!-->
+    <!--<div class="skills-content">
+        <h1>Skills & Languages</h1>
+        <div class="slider">
+            <div class="slide"><img src="/Users/itsonlydaniii/Desktop/Portfolio/Design 1 copy.png" alt="HTML5"></div>
+            <div class="slide"><img src="/Users/itsonlydaniii/Desktop/Portfolio/Design 1 (3) copy.png" alt="Python"></div>
+            <div class="slide"><img src="/Users/itsonlydaniii/Desktop/Portfolio/Design 1 (4) copy.png" alt="CSS3"></div>
+            <div class="slide"><img src="/Users/itsonlydaniii/Desktop/Portfolio/Design 1 (7).png" alt="Ruby on Rails"></div>
+            <div class="slide"><img src="/Users/itsonlydaniii/Desktop/Portfolio/Design 1 (10).png" alt="JavaScript"></div>
+            <div class="slide"><img src="/Users/itsonlydaniii/Desktop/Portfolio/Design 1 (5).png" alt="Node.js"></div>
+            <div class="slide"><img src="/Users/itsonlydaniii/Desktop/Portfolio/Design 1 (6).png" alt="SQL"></div>
+            <div class="slide"><img src="/Users/itsonlydaniii/Desktop/Portfolio/Design 1 (2) copy.png" alt="React"></div>
+        </div>
+    </div>-->
+
+    <hr class="custom-hr">
+        
+    <!-- 3. Education & Certificates -->
+    <section class="education-certificates">
+        <h1>Education & Certificates</h1>
+        <div class="certificate">
+            <p><strong>Certificate Name:</strong> Dummy Certificate</p>
+            <p><strong>School Name:</strong> Dummy School</p>
+            <p><strong>Date of Completion:</strong> January 2024</p>
+        </div>
+        <div class="certificate">
+            <p><strong>Certificate Name:</strong> Dummy Certificate</p>
+            <p><strong>School Name:</strong> Dummy School</p>
+            <p><strong>Date of Completion:</strong> February 2024</p>
+        </div>
+        <!-- Add more certificates as needed -->
+    </section>
+</section>
+</body>
+</html>
