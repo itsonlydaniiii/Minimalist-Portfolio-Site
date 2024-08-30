@@ -154,15 +154,16 @@ nav ul li a {
 .resume-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
 }
 
 .resume-button:hover {
-    background-color: grey;
+    background-color: black;
+    color: white;
 }
 
 /*h2{
