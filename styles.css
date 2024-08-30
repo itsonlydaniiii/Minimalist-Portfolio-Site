@@ -86,8 +86,8 @@ nav ul li a {
 
 
 
-/* About Section */
-#about {
+/* About Section 1*/
+/*#about {
     padding: 50px;
     text-align: left;
     background-color: #001f3f; 
@@ -117,6 +117,52 @@ nav ul li a {
     margin-left: 2px;
     margin-right: 10px;
     margin-top: 150px;
+}*/
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.box1 {
+    width: 100%;
+    text-align: center;
+}
+
+.box2 {
+    flex: 1;
+}
+
+.box3 {
+    width: 100%;
+    text-align: center;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.resume-button:hover {
+    background-color: grey;
 }
 
 /*h2{
@@ -162,7 +208,64 @@ p{
     width: 35%
 }
 
+/*SKILL SECTION WITH CIRCLE INDICATORS*/
+/*.skills-section {
+    padding: 50px;
+    background-color: white;
+    color: black;
+}
 
+.skills-section h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 6px solid white;
+    position: relative;
+    background-color: white;
+}
+
+.circle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.circle[data-percentage] {
+    background-image: conic-gradient(
+        #ffb300 calc(var(--percentage) * 1%),
+        #ffffff calc(var(--percentage) * 1%)
+    );
+}
+
+.skill span {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}*/
 
 
 
